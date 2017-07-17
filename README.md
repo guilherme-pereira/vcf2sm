@@ -12,7 +12,7 @@ Besides [Python](https://www.python.org/) (v.2.7+) and [Matplotlib](https://matp
 [-g GENO_PATTERN [GENO_PATTERN ...] | -r GENO_RANGE [GENO_RANGE ...]] 
 [-1 [PAR1_PATTERN [PAR1_PATTERN ...]] | -k [PAR1_RANGE [PAR1_RANGE ...]] 
 [-2 [PAR2_PATTERN [PAR2_PATTERN ...]] | -l [PAR1_RANGE [PAR1_RANGE ...]] 
-[--sC SC] [--eC EC] [-a ALLELE_DEPTH] [-d MINIMUM_DEPTH] [-d MAXIMUM_DEPTH] 
+[--sC SC] [--eC EC] [-a ALLELE_DEPTH] [-d MINIMUM_DEPTH] [-D MAXIMUM_DEPTH] 
 [-S SMSCRIPT] [-I INFERENCE] [-e] [-M PLOIDY_RANGE] [-V SIGMA_RANGE]
 [-f PLOIDY_FILTER] [-p POST] [-n NAIVE_REPORTING] [-c CALLRATE] [-t CORES]
 ```
