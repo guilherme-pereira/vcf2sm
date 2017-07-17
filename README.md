@@ -33,7 +33,7 @@ Data from [this paper](http://journals.plos.org/plosone/article?id=10.1371/journ
 python VCF2SM.py -i NewPlusOldCalls.headed.vcf -o NewPlusOldCalls.headed_new.vcf -d 1260 -D 42000 -a RA/AA -r 1:84 -S ./src/SuperMASSA.py -I hw -M 4:6 -f 4 -p 0.80 -n 0.90 -c 0.75 -t 16
 ```
 
-## Arguments list
+## Arguments
 
 |Short|Long|Description|Details
 |--- | --- | --- | ---
