@@ -3,7 +3,7 @@ Python script that integrates sequencing depth information of polymorphisms in v
 
 ## Dependencies
 
-Besides Python v.2.7+ and Matplotlib, you will need the SuperMASSA source code, which is available [here](https://bitbucket.org/orserang/supermassa). SuperMASSA implements a Bayesian network to address the dosage calling problem taking genetic models into consideration, such as full-sib family and Hardy-Weinberg Equilibrium expected frequencies. Please see the original [paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030906) for details.
+Besides [Python](https://www.python.org/) (v.2.7+) and [Matplotlib](https://matplotlib.org/), you will need the SuperMASSA source code, which is available [here](https://bitbucket.org/orserang/supermassa). SuperMASSA implements a Bayesian network to address the dosage calling problem taking genetic models into consideration, such as full-sib family and Hardy-Weinberg Equilibrium expected frequencies. Please see the original [paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030906) for details.
 
 ## Usage
 
@@ -63,4 +63,4 @@ python VCF2SM.py -i NewPlusOldCalls.headed.vcf -o NewPlusOldCalls.headed_new.vcf
 
 ## Cite
 
-Pereira GS, Garcia AAF, Margarido GRA. A fully automated pipeline for quantitative genotype calling from next generation sequencing data in polyploids. BMC Bioinformatics 2017.
+Pereira GS, Garcia AAF, Margarido GRA. A fully automated pipeline for quantitative genotype calling from next generation sequencing data in polyploids. *BMC Bioinformatics* 2017.
