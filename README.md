@@ -63,4 +63,4 @@ python VCF2SM.py -i NewPlusOldCalls.headed.vcf -o NewPlusOldCalls.headed_new.vcf
 
 ## Cite
 
-Pereira GS, Garcia AAF, Margarido GRA. A fully automated pipeline for quantitative genotype calling from next generation sequencing data in polyploids. *BMC Bioinformatics* 2017.
+Pereira GS, Garcia AAF, Margarido GRA. (2017) A fully automated pipeline for quantitative genotype calling from next generation sequencing data in polyploids. *BMC Bioinformatics* (submitted).
