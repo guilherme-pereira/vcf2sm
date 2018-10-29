@@ -395,7 +395,7 @@ def get_sample_indices(args, parser, header, par1Idx, par2Idx):
 def get_AD_idx_single(vals, depth_idx):
     temp_split = vals.split(':')
     if temp_split != ['.']:
-        return temp_split[depth_idx].split(',').replace('.', '0')
+        return [e.replace('.', '0') for e in temp_split[depth_idx].split(',')]
     else:
         return ['0','0']
 
