@@ -103,6 +103,6 @@ VCF2SM provides some additional arguments that were not used in the previous exa
 
 ## Cite
 
-Pereira GS, Garcia AAF, Margarido GRA. (2018) A fully automated pipeline for quantitative genotype calling from next generation sequencing data in polyploids. *BMC Bioinformatics* (submitted).
+Pereira GS, Garcia AAF, Margarido GRA. (2018) A fully automated pipeline for quantitative genotype calling from next generation sequencing data in autopolyploids. *BMC Bioinformatics* 19:398. https://doi.org/10.1186/s12859-018-2433-6.
 
 Serang O, Mollinari M, Garcia AAF. (2012) Efficient Exact Maximum a Posteriori Computation for Bayesian SNP Genotyping in Polyploids. *PLoS ONE* 7(2): e30906. https://doi.org/10.1371/journal.pone.0030906
