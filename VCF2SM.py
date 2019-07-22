@@ -408,7 +408,7 @@ def get_AD_idx_double(vals, depth_idx):
         return ['0','0']
 
 
-def process_variant(args, parser, l, f, idx, SM_input_dir, use_parents, par1Idx, par2Idx, jobs):
+def process_variant(args, parser, n_vars, l, f, idx, SM_input_dir, use_parents, par1Idx, par2Idx, jobs):
     vals = l.split()
     alt_count = len(vals[4].split(','))
 
@@ -450,7 +450,7 @@ def process_variant(args, parser, l, f, idx, SM_input_dir, use_parents, par1Idx,
                 marker_name = vals[2]
             else:
                 marker_name = vals[0] + '_' + vals[1]
-            tempfilename = SM_input_dir + os.path.basename(f) + '_' + marker_name + '.txt'
+            tempfilename = SM_input_dir + os.path.basename(f) + '_var' + str(n_vars) + '_' + marker_name + '.txt'
             tempFile = file(tempfilename, 'w')
             geno_count = idx.__len__()
             [tempFile.write(str(i) + '\t' + allele_depths[i][0] + '\t' + allele_depths[i][1] + '\n') for i in xrange(geno_count)]
@@ -459,7 +459,7 @@ def process_variant(args, parser, l, f, idx, SM_input_dir, use_parents, par1Idx,
             combined_allele_depths_par1 = [0,0]
             combined_allele_depths_par2 = [0,0]
             if use_parents:
-                tempParfilename = SM_input_dir + os.path.basename(f) + '_' + marker_name + '_PARENTS.txt'
+                tempParfilename = SM_input_dir + os.path.basename(f) + '_var' + str(n_vars) + '_' + marker_name + '_PARENTS.txt'
                 tempParFile = file(tempParfilename, 'w')
                 nPar1 = par1Idx.__len__()
                 nPar2 = par2Idx.__len__()
@@ -506,7 +506,6 @@ def write_VCF_metadata(out_file, args, use_parents):
 
 
 def process_input_VCF_files(args, parser, SM_input_dir, use_parents, in_file_list, out_file_list):
-    init_vars = 0
     global filters
     passed = 0
     failed = 0
@@ -548,10 +547,11 @@ def process_input_VCF_files(args, parser, SM_input_dir, use_parents, in_file_lis
                     break
 
         jobs = []
+        n_vars = 0
         for l in input_file_conn:
             if l[0] != '#':
-                init_vars += 1
-                process_variant(args, parser, l, f, idx, SM_input_dir, use_parents, par1Idx, par2Idx, jobs)
+                n_vars += 1
+                process_variant(args, parser, n_vars, l, f, idx, SM_input_dir, use_parents, par1Idx, par2Idx, jobs)
 
         pool = mp.Pool(processes = args.threads)
         results = pool.map(run_SM, jobs)
