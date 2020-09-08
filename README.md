@@ -3,7 +3,7 @@ Python script that integrates sequencing depth information of polymorphisms in v
 
 ## Dependencies
 
-Besides [Python](https://www.python.org/) (v.2.7+) and [Matplotlib](https://matplotlib.org/), you will need the SuperMASSA source code, which is available [here](https://bitbucket.org/orserang/supermassa). SuperMASSA implements a Bayesian network to address the dosage calling problem taking genetic models into consideration, such as full-sib family and Hardy-Weinberg Equilibrium expected frequencies. Please see the original [paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030906) for details and cite it together with [this one](https://bmcbioinformatics.biomedcentral.com "VCF2SM paper") if you use it in a study that ends up published.
+Besides [Python](https://www.python.org/) (v.2.7+) and [Matplotlib](https://matplotlib.org/), you will need the SuperMASSA source code, which is available [here](https://bitbucket.org/orserang/supermassa). SuperMASSA implements a Bayesian network to address the dosage calling problem taking genetic models into consideration, such as full-sib family and Hardy-Weinberg Equilibrium expected frequencies. Please see the original [paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030906) for details and cite it together with [this one](https://doi.org/10.1186/s12859-018-2433-6) if you use it in a study that ends up published.
 
 Please note that VCF2SM is not compatible with Python 3.
 
